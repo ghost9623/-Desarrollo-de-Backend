@@ -1,8 +1,10 @@
 package com.Practica.restcontrollers;
 
 
+import com.Practica.models.farmacos;
 import com.Practica.models.pacientes;
 
+import com.Practica.services.Servicesfarmacos;
 import com.Practica.services.Servicespacientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -53,3 +55,4 @@ public class pacienteRestcontrollers {
         return serv.consult(id);
     }
 }
+

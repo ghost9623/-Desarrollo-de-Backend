@@ -3,10 +3,11 @@ package com.Practica.services;
 import com.Practica.models.pacientes;
 import com.Practica.repository.crud;
 import com.Practica.repository.pacienterepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class Servicespacientes extends crud<pacientes, pacienterepository> {
     public Servicespacientes(pacienterepository repo) {
         super(repo);

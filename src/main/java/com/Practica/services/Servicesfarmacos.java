@@ -3,11 +3,13 @@ package com.Practica.services;
 import com.Practica.models.farmacos;
 import com.Practica.repository.crud;
 import com.Practica.repository.farmacorepository;
-import javassist.tools.framedump;
+
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class Servicesfarmacos extends crud<farmacos, farmacorepository> {
     public Servicesfarmacos(farmacorepository repo) {
         super(repo);
