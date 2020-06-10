@@ -15,31 +15,34 @@ public class Servicespacientes extends crud<pacientes, pacienterepository> {
 
     @Override
     public List<pacientes> list() {
-        return null;
+        return repo.findAll();
     }
 
     @Override
     public pacientes get(int id) {
-        return null;
+        return repo.findById(id).get();
     }
 
     @Override
     public void add(pacientes o) {
-
+      repo.save(o);
     }
 
     @Override
     public void update(pacientes o, int id) {
 
+        o.setId(id);
+
+        repo.save(o);
     }
 
     @Override
     public void delete(int id) {
-
+        repo.deleteById(id);
     }
 
     @Override
     public Optional<pacientes> consult(int id) {
-        return Optional.empty();
+        return repo.findById(id);
     }
 }

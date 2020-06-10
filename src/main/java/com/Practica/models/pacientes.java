@@ -12,7 +12,7 @@ public class pacientes {
     @Column(name="nombre", columnDefinition = "varchar(50) not null")
     private String nombre;
 
-    @Column(name="marca", columnDefinition = "int not null")
+    @Column(name="edad", columnDefinition = "int not null")
     private String edad;
     @Column(name="medico", columnDefinition = "varchar(60) not null")
     private String medico;
